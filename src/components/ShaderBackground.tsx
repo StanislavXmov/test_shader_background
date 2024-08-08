@@ -17,7 +17,7 @@ const shaders = {
 }
 
 export const ShaderBackground = ({shader}: {shader: Shaders}) => {
-  const texture = useLoader(TextureLoader, 'public/water.png');
+  const texture = useLoader(TextureLoader, './public/water.png');
   texture.flipY = false;
   const mesh = useRef<Mesh>(null);
 
